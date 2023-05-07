@@ -12,6 +12,8 @@ def get(array, index, default=None):
     :return: значение по индексу или значение по-умолчанию.
     """
     if index < 0:
+    # if index not in range(len(array)): # если индекс вне диапазона
+
         return default
 
     return array[index]
